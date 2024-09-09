@@ -16,7 +16,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='qr-main' id='qr-div'>
         <div class="logo-div">
-            <img src='./images/logo-qr-generator.svg' id='back-logo'>
+            <img src='../images/logo-qr-generator.svg' id='back-logo'>
         </div>
         <div>
         <div class="circle" id='circle'>
