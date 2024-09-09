@@ -5,9 +5,9 @@ import { copyImageToClipboard } from 'copy-image-clipboard'
 
 document.querySelector('#app').innerHTML = `
   <div id='container'>
-        <img src='./images/bg-illustration.svg' class='bg-image'>
+        <img src='/images/bg-illustration.svg' class='bg-image'>
     <div class="main">
-        <img src="./images/logo-qr-generator.svg" alt="qr-generator" class="logo">
+        <img src="/images/logo-qr-generator.svg" alt="qr-generator" class="logo">
         <div class="input-div">
             <input type="text" required placeholder='Enter an url' class='inpt' size='38'>
             <button class="btn">QR code</button>
@@ -16,7 +16,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='qr-main' id='qr-div'>
         <div class="logo-div">
-            <img src='../images/logo-qr-generator.svg' id='back-logo'>
+            <img src='/images/logo-qr-generator.svg' id='back-logo'>
         </div>
         <div>
         <div class="circle" id='circle'>
