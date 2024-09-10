@@ -3,13 +3,16 @@ import dom2image from 'dom-to-image'
 import FileSaver from 'file-saver'
 import { copyImageToClipboard } from 'copy-image-clipboard'
 import bg from './images/bg-illustration.svg'
+import logo from "./images/logo-qr-generator.svg"
+import down from "./images/down.svg"
+import link from "./images/link.svg"
 
 
 document.querySelector('#app').innerHTML = `
   <div id='container'>
         <img src=${bg} class='bg-image' />;
     <div class="main">
-        <img src=${"/images/logo-qr-generator.svg"} alt="qr-generator" class="logo">
+        <img src=${logo} alt="qr-generator" class="logo">
         <div class="input-div">
             <input type="text" required placeholder='Enter an url' class='inpt' size='38'>
             <button class="btn">QR code</button>
@@ -18,7 +21,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='qr-main' id='qr-div'>
         <div class="logo-div">
-            <img src='/images/logo-qr-generator.svg' id='back-logo'>
+            <img src=${logo} id='back-logo'>
         </div>
         <div>
         <div class="circle" id='circle'>
@@ -28,8 +31,8 @@ document.querySelector('#app').innerHTML = `
 
         </div>
         <div class="btn-div">
-            <button class='btn-b' id='download-btn'>Download <img src='./images/down.svg'></button>
-            <button class='btn-b' id='share-btn'>Share <img src='./images/link.svg'></button>
+            <button class='btn-b' id='download-btn'>Download <img src=${down}></button>
+            <button class='btn-b' id='share-btn'>Share <img src=${link}></button>
         </div>
         </div>
     </div>
