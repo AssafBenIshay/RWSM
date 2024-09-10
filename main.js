@@ -4,11 +4,12 @@ import FileSaver from 'file-saver'
 import { copyImageToClipboard } from 'copy-image-clipboard'
 import bg from './images/bg-illustration.svg'
 
+
 document.querySelector('#app').innerHTML = `
   <div id='container'>
         <img src=${bg} class='bg-image' />;
     <div class="main">
-        <img src="/images/logo-qr-generator.svg" alt="qr-generator" class="logo">
+        <img src=${/images/logo-qr-generator.svg} alt="qr-generator" class="logo">
         <div class="input-div">
             <input type="text" required placeholder='Enter an url' class='inpt' size='38'>
             <button class="btn">QR code</button>
