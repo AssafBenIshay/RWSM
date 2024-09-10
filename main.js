@@ -2,10 +2,11 @@ import './style.css'
 import dom2image from 'dom-to-image'
 import FileSaver from 'file-saver'
 import { copyImageToClipboard } from 'copy-image-clipboard'
+import bg from './images/bg-illustration.svg'
 
 document.querySelector('#app').innerHTML = `
   <div id='container'>
-        <img src='/images/bg-illustration.svg' class='bg-image'>
+        <img src={bg} class='bg-image'>
     <div class="main">
         <img src="/images/logo-qr-generator.svg" alt="qr-generator" class="logo">
         <div class="input-div">
