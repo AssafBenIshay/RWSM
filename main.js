@@ -6,7 +6,7 @@ import bg from './images/bg-illustration.svg'
 
 document.querySelector('#app').innerHTML = `
   <div id='container'>
-        <img src={bg} class='bg-image' />
+        <img src=${bg} class='bg-image' />;
     <div class="main">
         <img src="/images/logo-qr-generator.svg" alt="qr-generator" class="logo">
         <div class="input-div">
